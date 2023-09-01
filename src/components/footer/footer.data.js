@@ -2,7 +2,7 @@ export default {
   widgets: [
     {
       id: 1,
-      iconSrc: '/assets/widget/chat.svg',
+      iconSrc: 'assets/widget/chat.svg',
       altText: 'Chat',
       title: 'Quick Replies',
       description:
@@ -10,7 +10,7 @@ export default {
     },
     {
       id: 2,
-      iconSrc: '/assets/widget/community.svg',
+      iconSrc: 'assets/widget/community.svg',
       altText: 'Chat',
       title: 'Real People',
       description:
@@ -18,7 +18,7 @@ export default {
     },
     {
       id: 3,
-      iconSrc: '/assets/widget/github.svg',
+      iconSrc: 'assets/widget/github.svg',
       altText: 'Github',
       title: 'Source Files',
       description:

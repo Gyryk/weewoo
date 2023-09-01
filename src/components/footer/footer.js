@@ -24,7 +24,7 @@ export default function Footer() {
         {/* End of footer widgets area */}
         <Box sx={styles.footer.footerBottomArea}>
           <Link path="/">
-            <Image src={'/icon.png'} alt="Logo" height={100} width={100} />
+            <Image src={'Icon.png'} alt="Logo" height={100} width={100} />
           </Link>
           <Box sx={styles.footer.menus}>
             <nav>
