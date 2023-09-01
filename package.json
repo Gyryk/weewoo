@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.11.1",
     "analytics": "^0.8.9",
     "dotenv": "^16.3.1",
     "emotion": "^11.0.0",
@@ -18,9 +20,6 @@
     "framer-motion": "^10.16.1",
     "fs": "^0.0.1-security",
     "globby": "^13.2.2",
-    "imagemin-mozjpeg": "^10.0.0",
-    "imagemin-optipng": "^8.0.0",
-    "imagemin-svgo": "^10.0.1",
     "isomorphic-unfetch": "^4.0.2",
     "next": "13.4.19",
     "next-compose-plugins": "^2.2.1",
