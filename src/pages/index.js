@@ -38,3 +38,7 @@ export default function IndexPage() {
     </ThemeProvider>
   );
 }
+
+// "imagemin-mozjpeg": "^10.0.0",
+// "imagemin-optipng": "^8.0.0",
+// "imagemin-svgo": "^10.0.1",

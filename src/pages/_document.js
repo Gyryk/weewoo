@@ -10,7 +10,7 @@ class CustomDocument extends Document {
     return (
       <Html lang="en-US">
         <Head>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="favicon.ico" />
         </Head>
         <body>
           <Main />
