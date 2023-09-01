@@ -23,7 +23,7 @@ const data = {
   features: [
     {
       id: 1,
-      imgSrc: '/assets/services/tiktok.png',
+      imgSrc: 'assets/services/tiktok.png',
       altText: 'Smart Features',
       title: 'TikTok Trending',
       text:
@@ -31,7 +31,7 @@ const data = {
     },
     {
       id: 2,
-      imgSrc: '/assets/services/youtube.png',
+      imgSrc: 'assets/services/youtube.png',
       altText: 'Secure Contents',
       title: 'YouTube Mastery',
       text:
@@ -46,25 +46,33 @@ export default function ServiceSection() {
   const handleClick = (e) => {
     e.preventDefault();
     setVideoOpen(true);
+    document.getElementById("videoPlayer").play();
+    document.getElementById("playButton").style.visibility = 'hidden';
   };
+
+  function finish(){
+    document.getElementById("playButton").style.visibility = 'visible'
+  }
   return (
     <section id='services' sx={{ variant: 'section.services' }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          {/* <Image src={'/assets/service-thumb.png'} alt="Thumbnail" />
+          {/* <Image src={'assets/service-thumb.png'} alt="Thumbnail" /> */}
           <Button
             sx={styles.videoBtn}
             onClick={handleClick}
             aria-label="Play Button"
+            id="playButton"
           >
             <span>
               <IoIosPlay />
             </span>
-          </Button> */}
-          <YouTube videoId="co2qDPpNBzU" sx={styles.video}/>
+          </Button>
+          {/* <YouTube videoId="co2qDPpNBzU" sx={styles.video}/> */}
+          <video src="Intro.mp4" sx={styles.video} id="videoPlayer" onEnded={finish}/>
 
           <Box sx={styles.shapeBox}>
-            <Image src={'/assets/shape-pattern1.png'} alt="Shape" />
+            <Image src={'assets/shape-pattern1.png'} alt="Shape" />
           </Box>
         </Box>
         <Box sx={styles.contentBox}>
@@ -85,10 +93,9 @@ export default function ServiceSection() {
         </Box>
       </Container>
       {/* <ModalVideo
-        channel="youtube"
         isOpen={videoOpen}
         youtube={{ mute: 0, autoplay: 0 }}
-        videoId="iGBERMGMIvc"
+        videoId="co2qDPpNBzU"
         onClose={() => setVideoOpen(false)}
       /> */}
     </section>
@@ -247,9 +254,6 @@ const styles = {
   video: {
     width: '100%',
     borderRadius: '50px',
-    pt: '10px',
     overflow: 'hidden'
   }
 };
-
-//TODO: Add new thumbnail and video using the original better video player

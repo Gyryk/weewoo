@@ -176,6 +176,11 @@ export default function TeamSection() {
   return (
     <section>
       <Container sx={styles.text}>
+      <SectionHeader
+          slogan="our team"
+          title="The most qualified and talented individuals"
+          sx={styles.head}
+        />
         <Box sx={styles.box}>
           <TextBox
             description={
@@ -186,12 +191,6 @@ export default function TeamSection() {
           description={'To protect your intellectual property, we even make sure that all pertinent project files are deleted exactly 1 week after project completion.'}
           />
         </Box>
-
-        <SectionHeader
-          slogan="our team"
-          title="The most qualified and talented individuals"
-          sx={styles.head}
-        />
         {/* <Grid sx={styles.grid}>
           {data.map((item) => (
             <TeamCard

@@ -48,12 +48,13 @@ export default function Subscribe() {
       });
     }
   };
+
   const subscribe = async (e) => {
     e.preventDefault();
     setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
 
     // 3. Send a request to our API with the user's email address.
-    const res = await fetch('/api/subscribe', {
+    const res = await fetch('/api/subscribeUser', {
       body: JSON.stringify({
         email: inputEl.current.value,
       }),
@@ -69,8 +70,8 @@ export default function Subscribe() {
       'Success! 🎉 Someone will be in contact very soon.'
     );
     // For sendGrid integration
-    const text = await res.text();
-    handleSendGridResponse(res.status, text);
+    // const text = await res.text();
+    // handleSendGridResponse(res.status, text);
   };
   return (
     <section id="quote">
@@ -81,7 +82,7 @@ export default function Subscribe() {
               Get a Custom Quote
             </Heading>
             <Text as="p" sx={styles.description}>
-              Didn't find what you were looking for?
+              Did not find what you were looking for?
               We will personally walk through your requirements to give you a fair quote.
             </Text>
             <form onSubmit={subscribe}>
@@ -96,15 +97,6 @@ export default function Subscribe() {
                   type="email"
                   placeholder="Enter your email address"
                 />
-
-                <div>
-                  {status.info.error && (
-                    <div className="error">Error: {status.info.msg}</div>
-                  )}
-                  {!status.info.error && status.info.msg && (
-                    <div className="success">{status.info.msg}</div>
-                  )}
-                </div>
                 <Button
                   type="submit"
                   disabled={status.submitting}
@@ -190,4 +182,4 @@ const styles = {
   },
 };
 
-//TODO: Rework Mailchimp integration and set-up welcome email (Ask them to send their needs in a specified format)
+//TODO: set-up welcome email (Ask them to send their needs in a specified format)

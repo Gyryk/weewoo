@@ -10,7 +10,7 @@ import Carousel from 'react-multi-carousel';
 const data = [
   {
     id: 1,
-    imgSrc: '/assets/blog/1.png',
+    imgSrc: 'assets/blog/1.png',
     altText: 'Marketing',
     postLink: 'https://youtu.be/RCN-dBkZ5c4',
     title: 'How to Grow your Account',
@@ -19,7 +19,7 @@ const data = [
   },
   {
     id: 2,
-    imgSrc: '/assets/blog/2.jpg',
+    imgSrc: 'assets/blog/2.jpg',
     altText: 'Creative',
     postLink: 'https://youtu.be/gvI8HSMRsZA',
     title: 'The Office: Where are they now?',
@@ -28,7 +28,7 @@ const data = [
   },
   {
     id: 3,
-    imgSrc: '/assets/blog/3.jpg',
+    imgSrc: 'assets/blog/3.jpg',
     altText: 'Startup',
     postLink: 'https://youtu.be/ZFe8UlqqA3w',
     title: 'Game Designing Advertisement',
@@ -37,7 +37,7 @@ const data = [
   },
   {
     id: 4,
-    imgSrc: '/assets/blog/4.jpg',
+    imgSrc: 'assets/blog/4.jpg',
     altText: 'Creative',
     postLink: 'https://youtu.be/s72yXTuSv-Q',
     title: 'Andrew Tate vs Elon Musk',

@@ -12,7 +12,7 @@ const data = [
     title: 'Liked the people',
     description:
       'The team was extremely professional and the work was great, although the final video took a day longer than expected to come after revisions.',
-    avatar: '/assets/testimonial/avatar1.png',
+    avatar: 'assets/testimonial/avatar1.png',
     name: 'Jessica Carter',
     designation: '@jesscar',
     review: 4,
@@ -22,7 +22,7 @@ const data = [
     title: 'Quality Work, Fast Delivery',
     description:
       'They went above and beyond what I had requested and provided and absolutely phenomenal video for my edutainment YouTube channel.',
-    avatar: '/assets/testimonial/avatar2.png',
+    avatar: 'assets/testimonial/avatar2.png',
     name: 'David Hilguston',
     designation: '@hilguston',
     review: 5,
@@ -42,7 +42,7 @@ const data = [
     title: 'Video was good',
     description:
       'I had only ordered a single short video and I got what I wanted. They did exactly what I asked for and delivered on time.',
-    avatar: '/assets/testimonial/avatar4.png',
+    avatar: 'assets/testimonial/avatar4.png',
     name: 'Ian Barstool',
     designation: '@ianbarst',
     review: 4,

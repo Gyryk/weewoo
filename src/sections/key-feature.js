@@ -8,7 +8,7 @@ import FeatureCardColumn from '../components/feature-card-column.js';
 const data = [
   {
     id: 1,
-    imgSrc: '/assets/key-feature/performance.svg',
+    imgSrc: 'assets/key-feature/performance.svg',
     altText: 'Fast Performance',
     title: 'Fast Performance',
     text:
@@ -16,7 +16,7 @@ const data = [
   },
   {
     id: 2,
-    imgSrc: '/assets/key-feature/subscription.svg',
+    imgSrc: 'assets/key-feature/subscription.svg',
     altText: 'Pro Quality',
     title: 'Professional Quality',
     text:
@@ -24,7 +24,7 @@ const data = [
   },
   {
     id: 3,
-    imgSrc: '/assets/key-feature/partnership.svg',
+    imgSrc: 'assets/key-feature/partnership.svg',
     altText: 'Good Prices',
     title: 'Affordable Prices',
     text:
@@ -32,7 +32,7 @@ const data = [
   },
   {
     id: 4,
-    imgSrc: '/assets/key-feature/support.svg',
+    imgSrc: 'assets/key-feature/support.svg',
     altText: 'Customer Support',
     title: 'Customer Support',
     text:

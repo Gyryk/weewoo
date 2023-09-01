@@ -28,7 +28,7 @@ export default function Banner() {
         </Box>
 
         <Box sx={styles.banner.imageBox}>
-          <Image src={'/assets/timeline.png'} alt="banner" />
+          <Image src={'assets/timeline.png'} alt="banner" />
         </Box>
       </Container>
     </section>
@@ -53,7 +53,7 @@ const styles = {
       height: '100%',
       width: '100%',
       zIndex: -1,
-      backgroundImage: `url(/assets/shape-left.png)`,
+      backgroundImage: `url(assets/shape-left.png)`,
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom left',
       backgroundSize: '36%',
@@ -66,7 +66,7 @@ const styles = {
       height: '100%',
       width: '100%',
       zIndex: -1,
-      backgroundImage: `url(/assets/shape-right.png)`,
+      backgroundImage: `url(assets/shape-right.png)`,
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom right',
       backgroundSize: '32%',

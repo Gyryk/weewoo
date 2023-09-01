@@ -16,7 +16,7 @@ const data = [
   },
   {
     id: 2,
-    imgSrc: '/assets/feature/revision.png',
+    imgSrc: 'assets/feature/revision.png',
     altText: 'Revisions',
     title: 'Free Revision',
     text:
@@ -24,7 +24,7 @@ const data = [
   },
   {
     id: 3,
-    imgSrc: '/assets/feature/source.png',
+    imgSrc: 'assets/feature/source.png',
     altText: 'Source',
     title: 'Project Files',
     text:
@@ -32,7 +32,7 @@ const data = [
   },
   {
     id: 4,
-    imgSrc: '/assets/feature/voice.png',
+    imgSrc: 'assets/feature/voice.png',
     altText: 'Voiceovers',
     title: 'Stunning Voicovers',
     text:
